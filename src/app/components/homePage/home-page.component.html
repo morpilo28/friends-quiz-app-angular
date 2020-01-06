@@ -1,0 +1,11 @@
+<main>
+    <div>Time Left: {{secondsLeft}}</div>
+    <app-game-box [question]='questions[questionToShowId]' (UserAnswer)='onUserAnswer($event)'></app-game-box>
+</main>
+<aside>
+    <h2>Questions</h2>
+    <app-aside-questions-bar *ngFor='let question of questions' [question]='question' (onQuestion)='onQuestionToShow($event)'></app-aside-questions-bar>
+</aside>
+<footer>
+    <app-result-footer [numOfQuestions] = questions.length></app-result-footer>
+</footer>

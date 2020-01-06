@@ -1,0 +1,16 @@
+div {
+  background-color: coral;
+  width: 90%;
+  margin: 10px;
+  text-align: center;
+}
+div p {
+  padding: 3px;
+  margin: 2px;
+}
+.right-answer {
+  background-color: green;
+}
+.wrong-answer {
+  background-color: red;
+}

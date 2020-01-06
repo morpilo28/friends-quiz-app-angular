@@ -1,0 +1,5 @@
+<div *ngIf='question' [ngClass]="{
+    'right-answer':question.isAnswered === true && question.selectedAnswerId === question.correctAnswerId,
+    'wrong-answer':question.isAnswered === true && question.selectedAnswerId !== question.correctAnswerId}">
+    <p (click)="onQuestionClicked(question.id)">{{question.question}}</p>
+</div>

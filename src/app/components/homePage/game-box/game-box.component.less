@@ -1,0 +1,39 @@
+@p-size: 5px;
+@button-size: 5px;
+@p-weight: bold;
+@right-answer: green;
+@wrong-answer: red;
+
+.gameBox {
+    width: 100%;
+    text-align: center;
+
+    p {
+        width: 100%;
+        font-size: 3em;
+        padding: 3% 5% 3% 5%;
+        font-weight: @p-weight;
+        margin: auto;
+    }
+
+    button {
+        display: inline-block;
+        text-align: center;
+        width: 80%;
+        margin: 10px 2px 10px 36px;
+        font-size: 2em;
+    }
+
+    .not-active {
+        pointer-events: none;
+    }
+
+
+    .right-answer {
+        background-color: @right-answer;
+    }
+
+    .wrong-answer {
+        background-color: @wrong-answer;
+    }
+}

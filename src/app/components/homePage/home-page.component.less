@@ -1,0 +1,34 @@
+@main-color: white;
+@aside-color: purple;
+@footer-color: orange;
+@div-weight: bold;
+
+main {
+    width: 80%;
+    background-color: @main-color;
+    float: left;
+    min-height: 350px;
+
+    div {
+        font-weight: @div-weight;
+    }
+}
+
+aside {
+    width: 20%;
+    background-color: @aside-color;
+    float: left;
+    min-height: 350px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    min-height: 160px;
+    background-color: @footer-color;
+    text-align: center;
+}

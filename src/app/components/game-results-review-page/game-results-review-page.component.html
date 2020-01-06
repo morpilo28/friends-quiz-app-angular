@@ -1,0 +1,13 @@
+<main>
+    <app-game-box [question]='questions[idx]'></app-game-box>
+</main>
+<div class="btn">
+    <button class="prev" (click)='onPrev()'>Prev</button>
+</div>
+<div class="btn">
+    <button class="next" (click)='onNext()'>Next</button>
+</div>
+<br>
+<div class="footer">
+        <app-result-footer [numOfQuestions]=questions.length></app-result-footer>
+</div>

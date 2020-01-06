@@ -1,0 +1,10 @@
+<div class='gameBox' *ngIf="question">
+        <p>{{question.question}}</p>
+        <button *ngFor='let answer of question.answers' (click)="onPickedAnswer($event, answer.id, question.id)" [ngClass]="{
+                    'not-active': question.isAnswered === true || secondsLeft === 0,
+                    'right-answer': (answer.id === question.selectedAnswerId && question.selectedAnswerId === question.correctAnswerId),
+                    'wrong-answer': (answer.id === question.selectedAnswerId && question.selectedAnswerId !== question.correctAnswerId)
+                }">
+            {{answer.answer}}
+        </button>
+</div>
